@@ -1,1 +1,61 @@
-<p>world works!</p>
+<div cdkDropListGroup>
+  <div class="column-container">
+    <h2>Column 1</h2>
+
+    <div
+      cdkDropList
+      [cdkDropListData]="column1"
+      class="column"
+      (cdkDropListDropped)="drop($event)"
+    >
+      @for (item of column1; track item) {
+      <div class="block" cdkDrag>{{ item }}</div>
+      }
+    </div>
+  </div>
+
+  <div class="column-container">
+    <h2>Column 2</h2>
+
+    <div
+      cdkDropList
+      [cdkDropListData]="column2"
+      class="column"
+      (cdkDropListDropped)="drop($event)"
+    >
+      @for (item of column2; track item) {
+      <div class="block" cdkDrag>{{ item }}</div>
+      }
+    </div>
+  </div>
+
+  <div class="column-container">
+    <h2>Column 3</h2>
+
+    <div
+      cdkDropList
+      [cdkDropListData]="column3"
+      class="column"
+      (cdkDropListDropped)="drop($event)"
+    >
+      @for (item of column3; track item) {
+      <div class="block" cdkDrag>{{ item }}</div>
+      }
+    </div>
+  </div>
+
+  <div class="column-container">
+    <h2>Column 4</h2>
+
+    <div
+      cdkDropList
+      [cdkDropListData]="column4"
+      class="column"
+      (cdkDropListDropped)="drop($event)"
+    >
+      @for (item of column4; track item) {
+      <div class="block" cdkDrag>{{ item }}</div>
+      }
+    </div>
+  </div>
+</div>

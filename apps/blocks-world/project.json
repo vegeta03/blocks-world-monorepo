@@ -8,19 +8,26 @@
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:application",
-      "outputs": ["{options.outputPath}"],
+      "outputs": [
+        "{options.outputPath}"
+      ],
       "options": {
         "outputPath": "dist/apps/blocks-world",
         "index": "apps/blocks-world/src/index.html",
         "browser": "apps/blocks-world/src/main.ts",
-        "polyfills": ["zone.js"],
+        "polyfills": [
+          "zone.js"
+        ],
         "tsConfig": "apps/blocks-world/tsconfig.app.json",
         "inlineStyleLanguage": "scss",
         "assets": [
           "apps/blocks-world/src/favicon.ico",
           "apps/blocks-world/src/assets"
         ],
-        "styles": ["apps/blocks-world/src/styles.scss"],
+        "styles": [
+          "@angular/material/prebuilt-themes/indigo-pink.css",
+          "apps/blocks-world/src/styles.scss"
+        ],
         "scripts": []
       },
       "configurations": {
@@ -70,7 +77,9 @@
     },
     "test": {
       "executor": "@nx/jest:jest",
-      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "outputs": [
+        "{workspaceRoot}/coverage/{projectRoot}"
+      ],
       "options": {
         "jestConfig": "apps/blocks-world/jest.config.ts"
       }
