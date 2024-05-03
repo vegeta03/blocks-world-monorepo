@@ -14,7 +14,10 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@blocks-world-monorepo/blocks": ["libs/blocks/src/index.ts"],
+      "@blocks-world-monorepo/world": ["libs/world/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
