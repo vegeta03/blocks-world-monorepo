@@ -16,10 +16,10 @@ import {
   styleUrl: './world.component.scss',
 })
 export class WorldComponent {
-  column1: string[] = [];
-  column2: string[] = [];
-  column3: string[] = [];
-  column4: string[] = [];
+  column1: string[] = ['A'];
+  column2: string[] = ['B'];
+  column3: string[] = ['C'];
+  column4: string[] = ['D'];
 
   drop(event: CdkDragDrop<string[]>) {
     if (event.previousContainer !== event.container) {
