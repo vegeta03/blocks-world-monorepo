@@ -9,6 +9,7 @@
   border-style: none;
   display: inline-block;
   vertical-align: bottom;
+  border-bottom: 5px solid #282727;
 }
 
 .column {
@@ -16,7 +17,9 @@
   height: 500px;
   background: rgb(220, 202, 202);
   overflow: hidden;
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 .block {
