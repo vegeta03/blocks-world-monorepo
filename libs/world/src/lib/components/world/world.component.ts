@@ -7,12 +7,21 @@ import {
   CdkDropListGroup,
 } from '@angular/cdk/drag-drop';
 
-import { transferArrayItemToStack } from '@blocks-world-monorepo/utils';
+import {
+  IfLastItemPipe,
+  transferArrayItemToStack,
+} from '@blocks-world-monorepo/utils';
 
 @Component({
   selector: 'lib-world',
   standalone: true,
-  imports: [CommonModule, CdkDropListGroup, CdkDropList, CdkDrag],
+  imports: [
+    CommonModule,
+    CdkDropListGroup,
+    CdkDropList,
+    CdkDrag,
+    IfLastItemPipe,
+  ],
   templateUrl: './world.component.html',
   styleUrl: './world.component.scss',
 })

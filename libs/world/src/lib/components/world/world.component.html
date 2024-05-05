@@ -7,8 +7,10 @@
       class="column"
       (cdkDropListDropped)="drop($event)"
     >
-      @for (item of column1; track item) {
-      <div class="block" cdkDrag>{{ item }}</div>
+      @for (item of column1; track item; let index = $index) {
+      <div class="block" cdkDrag [cdkDragDisabled]="index | ifLastItem">
+        {{ item }}
+      </div>
       }
     </div>
   </div>
@@ -21,8 +23,10 @@
       class="column"
       (cdkDropListDropped)="drop($event)"
     >
-      @for (item of column2; track item) {
-      <div class="block" cdkDrag>{{ item }}</div>
+      @for (item of column2; track item; let index = $index) {
+      <div class="block" cdkDrag [cdkDragDisabled]="index | ifLastItem">
+        {{ item }}
+      </div>
       }
     </div>
   </div>
@@ -35,8 +39,10 @@
       class="column"
       (cdkDropListDropped)="drop($event)"
     >
-      @for (item of column3; track item) {
-      <div class="block" cdkDrag>{{ item }}</div>
+      @for (item of column3; track item; let index = $index) {
+      <div class="block" cdkDrag [cdkDragDisabled]="index | ifLastItem">
+        {{ item }}
+      </div>
       }
     </div>
   </div>
@@ -49,8 +55,10 @@
       class="column"
       (cdkDropListDropped)="drop($event)"
     >
-      @for (item of column4; track item) {
-      <div class="block" cdkDrag>{{ item }}</div>
+      @for (item of column4; track item; let index = $index) {
+      <div class="block" cdkDrag [cdkDragDisabled]="index | ifLastItem">
+        {{ item }}
+      </div>
       }
     </div>
   </div>
