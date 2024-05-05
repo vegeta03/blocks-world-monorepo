@@ -26,10 +26,10 @@ import {
   styleUrl: './world.component.scss',
 })
 export class WorldComponent {
-  column1: string[] = ['A', 'B', 'C'];
-  column2: string[] = ['D'];
-  column3: string[] = ['E', 'F'];
-  column4: string[] = ['G', 'I', 'J', 'K'];
+  column1: string[] = ['A1', 'A2', 'A3'].reverse();
+  column2: string[] = ['B1'].reverse();
+  column3: string[] = ['C1', 'C2'].reverse();
+  column4: string[] = ['D1', 'D2', 'D3', 'D4'].reverse();
 
   drop(event: CdkDragDrop<string[]>) {
     if (event.previousContainer !== event.container) {
