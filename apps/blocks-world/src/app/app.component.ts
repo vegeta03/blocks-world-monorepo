@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
 
-import { WorldComponent } from '@blocks-world-monorepo/world';
+import { UserInterfaceComponent } from '@blocks-world-monorepo/user-interface';
 
 @Component({
   standalone: true,
-  imports: [WorldComponent],
+  imports: [UserInterfaceComponent],
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
