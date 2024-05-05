@@ -1,8 +1,8 @@
-import { IfLastItemPipe } from './if-last-item.pipe';
+import { IsLastItemPipe } from './if-last-item.pipe';
 
 describe('IfLastItemPipe', () => {
   it('create an instance', () => {
-    const pipe = new IfLastItemPipe();
+    const pipe = new IsLastItemPipe();
     expect(pipe).toBeTruthy();
   });
 });

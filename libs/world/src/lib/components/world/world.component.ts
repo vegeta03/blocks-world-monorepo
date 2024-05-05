@@ -8,7 +8,7 @@ import {
 } from '@angular/cdk/drag-drop';
 
 import {
-  IfLastItemPipe,
+  IsLastItemPipe,
   transferArrayItemToStack,
 } from '@blocks-world-monorepo/utils';
 
@@ -20,7 +20,7 @@ import {
     CdkDropListGroup,
     CdkDropList,
     CdkDrag,
-    IfLastItemPipe,
+    IsLastItemPipe,
   ],
   templateUrl: './world.component.html',
   styleUrl: './world.component.scss',

@@ -1,10 +1,10 @@
 import { Pipe, PipeTransform } from '@angular/core';
 
 @Pipe({
-  name: 'ifLastItem',
+  name: 'isLastItem',
   standalone: true,
 })
-export class IfLastItemPipe implements PipeTransform {
+export class IsLastItemPipe implements PipeTransform {
   transform(value: number): boolean {
     return value !== 0;
   }
