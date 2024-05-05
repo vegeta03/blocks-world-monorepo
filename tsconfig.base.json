@@ -19,6 +19,9 @@
       "@blocks-world-monorepo/inference": ["libs/inference/src/index.ts"],
       "@blocks-world-monorepo/query-window": ["libs/query-window/src/index.ts"],
       "@blocks-world-monorepo/table": ["libs/table/src/index.ts"],
+      "@blocks-world-monorepo/user-interface": [
+        "libs/user-interface/src/index.ts"
+      ],
       "@blocks-world-monorepo/utils": ["libs/utils/src/index.ts"],
       "@blocks-world-monorepo/world": ["libs/world/src/index.ts"]
     }
