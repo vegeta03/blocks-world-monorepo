@@ -17,10 +17,10 @@ import { transferArrayItemToStack } from '@blocks-world-monorepo/utils';
   styleUrl: './world.component.scss',
 })
 export class WorldComponent {
-  column1: string[] = ['A'];
-  column2: string[] = ['B'];
-  column3: string[] = ['C'];
-  column4: string[] = ['D'];
+  column1: string[] = ['A', 'B', 'C'];
+  column2: string[] = ['D'];
+  column3: string[] = ['E', 'F'];
+  column4: string[] = ['G', 'I', 'J', 'K'];
 
   drop(event: CdkDragDrop<string[]>) {
     if (event.previousContainer !== event.container) {
