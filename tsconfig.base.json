@@ -16,6 +16,7 @@
     "baseUrl": ".",
     "paths": {
       "@blocks-world-monorepo/blocks": ["libs/blocks/src/index.ts"],
+      "@blocks-world-monorepo/utils": ["libs/utils/src/index.ts"],
       "@blocks-world-monorepo/world": ["libs/world/src/index.ts"]
     }
   },
