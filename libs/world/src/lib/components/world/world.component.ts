@@ -5,8 +5,9 @@ import {
   CdkDrag,
   CdkDropList,
   CdkDropListGroup,
-  transferArrayItem,
 } from '@angular/cdk/drag-drop';
+
+import { transferArrayItemToStack } from '@blocks-world-monorepo/utils';
 
 @Component({
   selector: 'lib-world',
@@ -23,10 +24,9 @@ export class WorldComponent {
 
   drop(event: CdkDragDrop<string[]>) {
     if (event.previousContainer !== event.container) {
-      transferArrayItem(
+      transferArrayItemToStack(
         event.previousContainer.data,
         event.container.data,
-        event.previousIndex,
         event.currentIndex
       );
     }
