@@ -1,26 +1,38 @@
-<p>
-  <b>query-window works!</b>
-</p>
+<div #queryWindow id="query-window">
+  <p>
+    <b>Conversations</b>
+  </p>
 
-<lib-system-message></lib-system-message>
-<lib-user-message></lib-user-message>
-<lib-system-message></lib-system-message>
-<lib-user-message></lib-user-message>
-<lib-system-message></lib-system-message>
-<lib-user-message></lib-user-message>
-<lib-system-message></lib-system-message>
-<lib-user-message></lib-user-message>
-<lib-system-message></lib-system-message>
-<lib-user-message></lib-user-message>
-<lib-system-message></lib-system-message>
-<lib-user-message></lib-user-message>
-<lib-system-message></lib-system-message>
-<lib-user-message></lib-user-message>
-<lib-system-message></lib-system-message>
-<lib-user-message></lib-user-message>
-<lib-system-message></lib-system-message>
-<lib-user-message></lib-user-message>
-<lib-system-message></lib-system-message>
-<lib-user-message></lib-user-message>
-<lib-system-message></lib-system-message>
-<lib-user-message></lib-user-message>
+  <lib-system-message></lib-system-message>
+  <lib-user-message></lib-user-message>
+  <lib-system-message></lib-system-message>
+  <lib-user-message></lib-user-message>
+  <lib-system-message></lib-system-message>
+  <lib-user-message></lib-user-message>
+  <lib-system-message></lib-system-message>
+  <lib-user-message></lib-user-message>
+  <lib-system-message></lib-system-message>
+  <lib-user-message></lib-user-message>
+  <lib-system-message></lib-system-message>
+  <lib-user-message></lib-user-message>
+  <lib-system-message></lib-system-message>
+  <lib-user-message></lib-user-message>
+  <lib-system-message></lib-system-message>
+  <lib-user-message></lib-user-message>
+  <lib-system-message></lib-system-message>
+  <lib-user-message></lib-user-message>
+  <lib-system-message></lib-system-message>
+  <lib-user-message></lib-user-message>
+  <lib-system-message></lib-system-message>
+  <lib-user-message></lib-user-message>
+
+  <form class="message-form">
+    <mat-form-field class="form-field-width">
+      <mat-label>Message</mat-label>
+      <input matInput #message maxlength="256" placeholder="Ex. Put A1 on B1" />
+      <mat-hint align="start"
+        >Query Ex: Why move A1? or How to put A1 on B1?
+      </mat-hint>
+    </mat-form-field>
+  </form>
+</div>

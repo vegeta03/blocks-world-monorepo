@@ -1,5 +1,16 @@
-:host {
-  border: solid 1px;
+#query-window {
+  border: 1px solid black;
   padding: 2%;
   margin: 1%;
+  height: 50%;
+  overflow: auto;
+}
+
+.message-form::before {
+  content: '\A';
+  white-space: pre-line;
+}
+
+.form-field-width {
+  width: 100%;
 }
