@@ -1,5 +1,12 @@
+
+.user-message {
+  display: flex;
+  justify-content: flex-end;
+  align-items: end;
+}
+
 .message-from {
-  display: inline;
+  margin-bottom: 0px;
   padding-left: 1%;
   font-size: small;
 }

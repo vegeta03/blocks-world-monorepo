@@ -2,8 +2,10 @@
   border: 1px solid black;
   padding: 2%;
   margin: 1%;
-  height: 50%;
-  overflow: auto;
+  width: 94%;
+  height: 45%;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 .message-form::before {
