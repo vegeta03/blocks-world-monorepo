@@ -30,7 +30,6 @@
     "@angular/cli": "~18.0.0",
     "@angular/compiler-cli": "18.0.1",
     "@angular/language-service": "18.0.1",
-    "@angular/material": "18.0.2",
     "@nx/cypress": "19.2.0",
     "@nx/eslint": "19.2.0",
     "@nx/eslint-plugin": "19.2.0",
